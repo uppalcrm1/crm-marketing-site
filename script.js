@@ -290,12 +290,24 @@ function generateSecurePassword() {
 
 // Generate slug from company name (alphanumeric only)
 function generateSlug(companyName) {
-    return companyName
+    if (!companyName || companyName.trim() === '') {
+        // Fallback if no company name provided
+        return 'company' + Date.now().toString().slice(-6);
+    }
+    
+    const slug = companyName
         .toLowerCase()
         .trim()
         .replace(/[^\w\s]/g, '') // Remove all special characters
         .replace(/\s+/g, '') // Remove all spaces
         .replace(/[^a-z0-9]/g, ''); // Keep only alphanumeric characters
+    
+    // Ensure minimum length and valid format
+    if (slug.length < 2) {
+        return 'company' + Date.now().toString().slice(-6);
+    }
+    
+    return slug;
 }
 
 // Real API call for trial signup
@@ -320,12 +332,18 @@ async function simulateTrialSignup(data) {
         }
 
         // Format data according to API requirements
+        const organizationData = {
+            name: data.company,
+            slug: organizationSlug
+        };
+        
+        // Only include domain if it's a valid non-empty string
+        if (domainOnly && domainOnly.trim() !== '') {
+            organizationData.domain = domainOnly;
+        }
+        
         const requestData = {
-            organization: {
-                name: data.company,
-                slug: organizationSlug,
-                domain: domainOnly
-            },
+            organization: organizationData,
             admin: {
                 email: data.email.toLowerCase().trim(),
                 password: temporaryPassword,
