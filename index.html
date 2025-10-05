@@ -3,31 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UppalCRM - Modern B2C CRM for Software Licensing</title>
-    <meta name="description" content="Streamline your software licensing business with UppalCRM's contact-centric B2C CRM solution. Get started with a free trial today.">
+    <title>UppalCRM - Contact-Centric CRM for Software Licensing</title>
+    <meta name="description" content="The modern CRM built specifically for software licensing companies. Manage contacts, track licenses, and grow revenue with UppalCRM.">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- EmailJS SDK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">
-                <i class="fas fa-users-cog"></i>
-                <span>UppalCRM</span>
-            </div>
-            <div class="nav-menu">
-                <a href="#features" class="nav-link">Features</a>
-                <a href="#pricing" class="nav-link">Pricing</a>
-                <a href="#trial" class="nav-link btn-primary">Start Free Trial</a>
-            </div>
-            <div class="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <i class="fas fa-users-cog"></i>
+                    <span>UppalCRM</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#trial" class="btn-nav">Start Free Trial</a>
+                </div>
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </nav>
@@ -36,52 +39,76 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">The Contact-Centric CRM for<br><span class="gradient-text">Software Licensing</span></h1>
-                    <p class="hero-subtitle">Transform your software licensing business with a contact-centric CRM that understands your customers, not just your deals. Track individual users, manage licenses, and grow your customer relationships like never before.</p>
-                    <div class="hero-stats">
-                        <div class="stat">
-                            <span class="stat-number">50,000+</span>
-                            <span class="stat-label">Licenses Managed</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">98%</span>
-                            <span class="stat-label">Customer Satisfaction</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">300+</span>
-                            <span class="stat-label">Software Companies</span>
-                        </div>
-                    </div>
-                    <div class="hero-cta">
-                        <a href="#trial" class="btn btn-primary btn-large">Start 30-Day Free Trial</a>
-                        <a href="#features" class="btn btn-outline">Learn More</a>
-                    </div>
-                    <p class="hero-disclaimer">No credit card required • Full access to all features • $15/user/month</p>
+                <div class="hero-badge">
+                    <i class="fas fa-sparkles"></i>
+                    <span>The CRM Built for Software Licensing</span>
                 </div>
-                <div class="hero-visual">
-                    <div class="dashboard-preview">
-                        <div class="dashboard-header">
-                            <div class="dashboard-tabs">
-                                <span class="tab active">Contacts</span>
-                                <span class="tab">Licenses</span>
-                                <span class="tab">Analytics</span>
+                <h1>Manage Contacts, Not Just Deals</h1>
+                <p class="hero-description">
+                    UppalCRM is the contact-centric CRM designed for software licensing companies.
+                    Track individual users, manage licenses at scale, and grow your recurring revenue—all in one place.
+                </p>
+                <div class="hero-cta">
+                    <a href="#trial" class="btn btn-primary">
+                        Start Free Trial
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        See How It Works
+                    </a>
+                </div>
+                <div class="hero-trust">
+                    <div class="trust-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>30-day free trial</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>No credit card required</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>$15/user/month</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image">
+                    <div class="dashboard-mockup">
+                        <div class="mockup-header">
+                            <div class="mockup-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
                             </div>
+                            <div class="mockup-title">UppalCRM Dashboard</div>
                         </div>
-                        <div class="dashboard-content">
-                            <div class="contact-card">
-                                <div class="contact-avatar">JD</div>
-                                <div class="contact-info">
-                                    <h4>John Doe</h4>
-                                    <p>Senior Developer at TechCorp</p>
-                                    <div class="contact-licenses">
-                                        <span class="license active">Pro License</span>
-                                        <span class="license">Team Add-on</span>
-                                    </div>
+                        <div class="mockup-content">
+                            <div class="mockup-sidebar">
+                                <div class="sidebar-item active">
+                                    <i class="fas fa-users"></i>
+                                    <span>Contacts</span>
                                 </div>
-                                <div class="contact-actions">
-                                    <button class="action-btn">Message</button>
-                                    <button class="action-btn">Renew</button>
+                                <div class="sidebar-item">
+                                    <i class="fas fa-key"></i>
+                                    <span>Licenses</span>
+                                </div>
+                                <div class="sidebar-item">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>Analytics</span>
+                                </div>
+                            </div>
+                            <div class="mockup-main">
+                                <div class="contact-preview">
+                                    <div class="contact-avatar">JD</div>
+                                    <div class="contact-details">
+                                        <div class="contact-name">John Doe</div>
+                                        <div class="contact-company">TechCorp Inc.</div>
+                                        <div class="contact-licenses">
+                                            <span class="license-badge">Pro License</span>
+                                            <span class="license-badge">Team Add-on</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -95,8 +122,8 @@
     <section id="features" class="features">
         <div class="container">
             <div class="section-header">
-                <h2>Built for Software Licensing Success</h2>
-                <p>Everything you need to manage your software business, from individual licenses to enterprise deals.</p>
+                <h2>Everything You Need to Scale Your Software Business</h2>
+                <p>Powerful features designed specifically for software licensing companies</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
@@ -111,35 +138,35 @@
                         <i class="fas fa-key"></i>
                     </div>
                     <h3>License Management</h3>
-                    <p>Effortlessly manage software licenses, track usage, handle renewals, and monitor compliance. Support for subscription and perpetual licensing models.</p>
+                    <p>Manage software licenses, track usage, handle renewals, and monitor compliance. Support for both subscription and perpetual licensing models.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
                     <h3>Revenue Analytics</h3>
-                    <p>Deep insights into your recurring revenue, churn rates, customer lifetime value, and license utilization. Make data-driven decisions that grow your business.</p>
+                    <p>Deep insights into recurring revenue, churn rates, customer lifetime value, and license utilization to drive data-driven decisions.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-comments"></i>
+                        <i class="fas fa-bell"></i>
                     </div>
-                    <h3>Customer Communication</h3>
-                    <p>Integrated communication tools for support tickets, renewal reminders, and customer success outreach. Keep every conversation in context.</p>
+                    <h3>Smart Notifications</h3>
+                    <p>Automated renewal reminders, usage alerts, and customer success triggers to never miss an important moment.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-cogs"></i>
+                        <i class="fas fa-plug"></i>
                     </div>
-                    <h3>API Integration</h3>
-                    <p>Connect with popular payment processors, licensing platforms, and customer support tools. APIs and webhooks make integration seamless.</p>
+                    <h3>API & Integrations</h3>
+                    <p>Connect with payment processors, licensing platforms, and support tools. Powerful APIs and webhooks for seamless integration.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
                     <h3>Enterprise Security</h3>
-                    <p>Bank-level security with encryption, SSO support, audit logs, and compliance tools. Your customer data is always protected.</p>
+                    <p>Bank-level encryption, SSO support, audit logs, and compliance tools. Your customer data is always protected.</p>
                 </div>
             </div>
         </div>
@@ -149,97 +176,95 @@
     <section id="pricing" class="pricing">
         <div class="container">
             <div class="section-header">
-                <h2>Simple, Pay-As-You-Grow Pricing</h2>
-                <p>Only pay for what you use. Scale effortlessly as your team grows.</p>
+                <h2>Simple, Transparent Pricing</h2>
+                <p>Pay only for what you use. Scale as you grow.</p>
             </div>
-            <div class="pricing-single">
-                <div class="pricing-card-large featured">
+            <div class="pricing-content">
+                <div class="pricing-card">
                     <div class="pricing-badge">Best Value</div>
-                    <div class="pricing-header-large">
+                    <div class="pricing-header">
                         <h3>Per User Pricing</h3>
-                        <div class="price-large">
+                        <div class="price">
                             <span class="currency">$</span>
                             <span class="amount">15</span>
                             <span class="period">/user/month</span>
                         </div>
-                        <p class="pricing-tagline">Everything included. No hidden fees.</p>
+                        <p class="pricing-subtitle">Everything included. No hidden fees.</p>
                     </div>
 
                     <div class="pricing-calculator">
-                        <div class="calculator-header">
-                            <i class="fas fa-calculator"></i>
-                            <span>Calculate your price</span>
-                        </div>
-                        <div class="calculator-input">
-                            <label for="userCount">Number of users:</label>
+                        <label for="userCount">How many users do you need?</label>
+                        <div class="calculator-input-group">
                             <input type="number" id="userCount" min="1" value="5" />
+                            <span class="input-label">users</span>
                         </div>
                         <div class="calculator-result">
-                            <span class="result-label">Total monthly cost:</span>
+                            <span class="result-label">Total monthly cost</span>
                             <span class="result-amount" id="totalCost">$75</span>
                         </div>
                     </div>
 
-                    <div class="pricing-features-large">
-                        <h4>Everything Included:</h4>
-                        <div class="features-two-column">
-                            <ul>
-                                <li><i class="fas fa-check-circle"></i> Unlimited contacts & leads</li>
-                                <li><i class="fas fa-check-circle"></i> Advanced license management</li>
-                                <li><i class="fas fa-check-circle"></i> Customer communication tools</li>
-                                <li><i class="fas fa-check-circle"></i> Revenue analytics & forecasting</li>
-                                <li><i class="fas fa-check-circle"></i> Team collaboration features</li>
-                                <li><i class="fas fa-check-circle"></i> API access & integrations</li>
-                            </ul>
-                            <ul>
-                                <li><i class="fas fa-check-circle"></i> Custom workflows & automation</li>
-                                <li><i class="fas fa-check-circle"></i> Priority email & chat support</li>
-                                <li><i class="fas fa-check-circle"></i> Advanced security & SSO</li>
-                                <li><i class="fas fa-check-circle"></i> Regular feature updates</li>
-                                <li><i class="fas fa-check-circle"></i> Data export & backups</li>
-                                <li><i class="fas fa-check-circle"></i> 99.9% uptime SLA</li>
-                            </ul>
-                        </div>
+                    <div class="pricing-features">
+                        <h4>Everything included:</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Unlimited contacts & leads</li>
+                            <li><i class="fas fa-check"></i> Advanced license management</li>
+                            <li><i class="fas fa-check"></i> Revenue analytics & forecasting</li>
+                            <li><i class="fas fa-check"></i> Team collaboration tools</li>
+                            <li><i class="fas fa-check"></i> API access & webhooks</li>
+                            <li><i class="fas fa-check"></i> Priority support</li>
+                            <li><i class="fas fa-check"></i> Advanced security & SSO</li>
+                            <li><i class="fas fa-check"></i> 99.9% uptime SLA</li>
+                        </ul>
                     </div>
 
-                    <div class="pricing-cta">
-                        <a href="#trial" class="btn btn-primary btn-xl">Start 30-Day Free Trial</a>
-                        <p class="cta-subtext">No credit card required • Cancel anytime</p>
-                    </div>
+                    <a href="#trial" class="btn btn-primary btn-large">Start 30-Day Free Trial</a>
                 </div>
-            </div>
 
-            <div class="pricing-faq">
-                <h3>Frequently Asked Questions</h3>
-                <div class="faq-grid">
-                    <div class="faq-item">
-                        <h4><i class="fas fa-question-circle"></i> Can I add or remove users anytime?</h4>
-                        <p>Yes! Add or remove users whenever you need. You'll only be charged for active users each month.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h4><i class="fas fa-question-circle"></i> What payment methods do you accept?</h4>
-                        <p>We accept all major credit cards, PayPal, and can set up invoicing for annual plans.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h4><i class="fas fa-question-circle"></i> Is there a discount for annual billing?</h4>
-                        <p>Yes! Save 20% when you pay annually. Contact us for custom enterprise pricing.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h4><i class="fas fa-question-circle"></i> What happens after the trial?</h4>
-                        <p>After your 30-day trial, simply add a payment method to continue. No automatic charges during trial.</p>
+                <div class="pricing-faq">
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <i class="fas fa-question-circle"></i>
+                                <span>Can I add or remove users anytime?</span>
+                            </div>
+                            <p>Yes! Add or remove users whenever you need. You'll only be charged for active users each month.</p>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <i class="fas fa-question-circle"></i>
+                                <span>What payment methods do you accept?</span>
+                            </div>
+                            <p>We accept all major credit cards, PayPal, and can set up invoicing for annual plans.</p>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <i class="fas fa-question-circle"></i>
+                                <span>Is there a discount for annual billing?</span>
+                            </div>
+                            <p>Yes! Save 20% when you pay annually. Contact us for custom enterprise pricing.</p>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <i class="fas fa-question-circle"></i>
+                                <span>What happens after the trial?</span>
+                            </div>
+                            <p>After your 30-day trial, simply add a payment method to continue. No automatic charges during trial.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Trial Section -->
-    <section id="trial" class="trial">
+    <!-- Trial Signup Section -->
+    <section id="trial" class="trial-section">
         <div class="container">
-            <div class="trial-content">
-                <div class="trial-info">
-                    <h2>Start Your Free Trial Today</h2>
-                    <p>Join hundreds of software companies who trust UppalCRM to manage their customer relationships and grow their licensing revenue.</p>
+            <div class="trial-container">
+                <div class="trial-header">
+                    <h2>Start Your 30-Day Free Trial</h2>
+                    <p>Join hundreds of software companies using UppalCRM to manage their customer relationships and grow revenue.</p>
                     <div class="trial-benefits">
                         <div class="benefit">
                             <i class="fas fa-check-circle"></i>
@@ -259,56 +284,56 @@
                         </div>
                     </div>
                 </div>
-                <div class="trial-form-container">
+
+                <div class="trial-form-wrapper">
                     <form id="trialForm" class="trial-form">
-                        <div class="form-group">
-                            <label for="firstName">First Name *</label>
-                            <input type="text" id="firstName" name="firstName" required>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required placeholder="John">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required placeholder="Doe">
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="lastName">Last Name *</label>
-                            <input type="text" id="lastName" name="lastName" required>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Business Email *</label>
+                                <input type="email" id="email" name="email" required placeholder="john@company.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company Name *</label>
+                                <input type="text" id="company" name="company" required placeholder="Acme Inc">
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="email">Business Email *</label>
-                            <input type="email" id="email" name="email" required>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number (Optional)</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567">
+                            </div>
+                            <div class="form-group">
+                                <label for="teamSize">Team Size</label>
+                                <select id="teamSize" name="teamSize">
+                                    <option value="">Select team size</option>
+                                    <option value="1-5">1-5 people</option>
+                                    <option value="6-20">6-20 people</option>
+                                    <option value="21-50">21-50 people</option>
+                                    <option value="51+">51+ people</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="company">Company Name *</label>
-                            <input type="text" id="company" name="company" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="website">Company Website</label>
-                            <input type="url" id="website" name="website" placeholder="https://yourcompany.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="industry">Industry</label>
-                            <select id="industry" name="industry">
-                                <option value="">Select Industry</option>
-                                <option value="Software/SaaS">Software/SaaS</option>
-                                <option value="Gaming">Gaming</option>
-                                <option value="Mobile Apps">Mobile Apps</option>
-                                <option value="Enterprise Software">Enterprise Software</option>
-                                <option value="Developer Tools">Developer Tools</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="teamSize">Team Size</label>
-                            <select id="teamSize" name="teamSize">
-                                <option value="">Select Team Size</option>
-                                <option value="1-5 people">1-5 people</option>
-                                <option value="6-20 people">6-20 people</option>
-                                <option value="21-50 people">21-50 people</option>
-                                <option value="51+ people">51+ people</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full btn-large">Start Free Trial</button>
-                        <p class="form-disclaimer">By signing up, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></p>
+
+                        <button type="submit" class="btn btn-primary btn-large btn-full">
+                            Start Free Trial
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+
+                        <p class="form-disclaimer">
+                            By signing up, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                        </p>
                     </form>
                 </div>
             </div>
@@ -320,7 +345,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <div class="nav-brand">
+                    <div class="brand">
                         <i class="fas fa-users-cog"></i>
                         <span>UppalCRM</span>
                     </div>
@@ -345,9 +370,9 @@
                         <h4>Company</h4>
                         <ul>
                             <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
@@ -363,688 +388,14 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 UppalCRM. All rights reserved.</p>
-                <div class="footer-bottom-links">
+                <div class="footer-links-bottom">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>
-                    <a href="#">Cookie Policy</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script>
-// UppalCRM Marketing Website JavaScript - WITH EMAILJS NOTIFICATIONS
-
-// Initialize EmailJS
-(function() {
-    emailjs.init("YOUR_USER_ID"); // We'll replace this with a working service
-})();
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Initialize all functionality
-    initNavigation();
-    initSmoothScrolling();
-    initTrialForm();
-    initPricingInteractions();
-    initAnimations();
-    initMobileNavigation();
-    initPricingCalculator();
-});
-
-// Navigation functionality
-function initNavigation() {
-    const navbar = document.querySelector('.navbar');
-    let lastScrollY = window.scrollY;
-
-    // Add scroll effect to navbar
-    window.addEventListener('scroll', () => {
-        const currentScrollY = window.scrollY;
-        
-        if (currentScrollY > 100) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-
-        // Hide navbar when scrolling down, show when scrolling up
-        if (currentScrollY > lastScrollY && currentScrollY > 200) {
-            navbar.style.transform = 'translateY(-100%)';
-        } else {
-            navbar.style.transform = 'translateY(0)';
-        }
-
-        lastScrollY = currentScrollY;
-    });
-}
-
-// Mobile navigation
-function initMobileNavigation() {
-    const navToggle = document.querySelector('.nav-toggle');
-    const navMenu = document.querySelector('.nav-menu');
-    
-    if (navToggle && navMenu) {
-        navToggle.addEventListener('click', () => {
-            navToggle.classList.toggle('active');
-            navMenu.classList.toggle('active');
-            document.body.classList.toggle('menu-open');
-        });
-
-        // Close mobile menu when clicking on links
-        const navLinks = document.querySelectorAll('.nav-link');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                navToggle.classList.remove('active');
-                navMenu.classList.remove('active');
-                document.body.classList.remove('menu-open');
-            });
-        });
-    }
-}
-
-// Smooth scrolling for anchor links
-function initSmoothScrolling() {
-    const links = document.querySelectorAll('a[href^="#"]');
-    
-    links.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            
-            const targetId = link.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            
-            if (targetElement) {
-                const offsetTop = targetElement.offsetTop - 80; // Account for fixed navbar
-                
-                window.scrollTo({
-                    top: offsetTop,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-}
-
-// Trial form handling WITH DIRECT EMAIL NOTIFICATIONS
-function initTrialForm() {
-    const form = document.getElementById('trialForm');
-    
-    if (!form) return;
-    
-    form.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        
-        // Get form data
-        const formData = new FormData(form);
-        const data = Object.fromEntries(formData.entries());
-        
-        // Validate form
-        const validation = validateTrialForm(data);
-        if (!validation.isValid) {
-            showFormErrors(validation.errors);
-            return;
-        }
-        
-        // Clear any existing errors
-        clearFormErrors();
-        
-        // Show loading state
-        const submitButton = form.querySelector('button[type="submit"]');
-        const originalText = submitButton.textContent;
-        submitButton.classList.add('loading');
-        submitButton.textContent = 'Creating Account...';
-        submitButton.disabled = true;
-        
-        try {
-            // Make real API call to registration endpoint
-            const result = await simulateTrialSignup(data);
-            
-            // SEND EMAIL NOTIFICATION - GUARANTEED TO WORK
-            try {
-                console.log('📧 Sending email notification to admin...');
-                
-                // Simple fetch to our proven working endpoint
-                const emailResponse = await fetch('https://uppalcrm-api.onrender.com/api/admin/send-lead-notification', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        leadName: `${data.firstName} ${data.lastName}`,
-                        leadEmail: data.email,
-                        leadCompany: data.company,
-                        leadPhone: data.phone || null,
-                        leadMessage: `🎯 NEW TRIAL SIGNUP from marketing site!\n\nDetails:\n- Industry: ${data.industry || 'Not specified'}\n- Team Size: ${data.teamSize || 'Not specified'}\n- Website: ${data.website || 'Not provided'}\n- Organization Slug: ${result.organizationSlug}\n- Login URL: https://uppalcrm-frontend.onrender.com/login?org=${result.organizationSlug}\n- Signup Time: ${new Date().toLocaleString()}\n\nThe user has been given their login credentials and is ready to start their 14-day trial!`,
-                        organizationName: data.company,
-                        utmSource: new URLSearchParams(window.location.search).get('utm_source'),
-                        utmMedium: new URLSearchParams(window.location.search).get('utm_medium'),
-                        utmCampaign: new URLSearchParams(window.location.search).get('utm_campaign')
-                    })
-                });
-                
-                if (emailResponse.ok) {
-                    const emailResult = await emailResponse.json();
-                    console.log('✅ Email sent successfully:', emailResult.messageId);
-                } else {
-                    console.error('❌ Email sending failed:', emailResponse.status);
-                }
-                
-            } catch (emailError) {
-                console.error('❌ Email error:', emailError);
-                // Don't fail the signup if email fails
-            }
-            
-            // Show success message for trial signup
-            const successMessage = `
-                <div class="success-details">
-                    <h4>🎉 Trial Request Submitted Successfully!</h4>
-                    <p><strong>Thank you for your interest in UppalCRM!</strong></p>
-                    <div class="login-details">
-                        <p><strong>Email:</strong> ${data.email}</p>
-                        <p><strong>Company:</strong> ${data.company}</p>
-                    </div>
-                    <div class="next-steps">
-                        <p><strong>What happens next?</strong></p>
-                        <ol>
-                            <li>Our team will review your trial request within 24 hours</li>
-                            <li>You'll receive an email with your account credentials</li>
-                            <li>The email will include your personalized login link</li>
-                            <li>You'll have 14 days to explore all UppalCRM features</li>
-                        </ol>
-                    </div>
-                    <p><em>💡 Check your inbox (and spam folder) for our welcome email!</em></p>
-                </div>
-            `;
-            showFormSuccess(successMessage);
-            
-            // Reset form
-            form.reset();
-            
-            // Track conversion event
-            trackConversion('trial_signup', {
-                ...data,
-                organizationSlug: result.organizationSlug
-            });
-            
-        } catch (error) {
-            console.error('Trial signup error:', error);
-            showFormError(error.message || 'Something went wrong. Please try again or contact support.');
-        } finally {
-            // Reset button state
-            submitButton.classList.remove('loading');
-            submitButton.textContent = originalText;
-            submitButton.disabled = false;
-        }
-    });
-}
-
-// Email notification is now handled inline above - no separate function needed
-
-// Form validation
-function validateTrialForm(data) {
-    const errors = {};
-    
-    // Required fields
-    const required = ['firstName', 'lastName', 'email', 'company'];
-    required.forEach(field => {
-        if (!data[field] || data[field].trim() === '') {
-            errors[field] = `${formatFieldName(field)} is required`;
-        }
-    });
-    
-    // Email validation
-    if (data.email && !isValidEmail(data.email)) {
-        errors.email = 'Please enter a valid email address';
-    }
-    
-    // Website validation (if provided)
-    if (data.website && data.website.trim() !== '' && !isValidURL(data.website)) {
-        errors.website = 'Please enter a valid website URL';
-    }
-    
-    return {
-        isValid: Object.keys(errors).length === 0,
-        errors: errors
-    };
-}
-
-// Helper functions for validation
-function isValidEmail(email) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-}
-
-function isValidURL(url) {
-    try {
-        new URL(url);
-        return true;
-    } catch {
-        return false;
-    }
-}
-
-function formatFieldName(fieldName) {
-    return fieldName
-        .replace(/([A-Z])/g, ' $1')
-        .replace(/^./, str => str.toUpperCase());
-}
-
-// Form error handling
-function showFormErrors(errors) {
-    clearFormErrors();
-    
-    Object.keys(errors).forEach(fieldName => {
-        const field = document.getElementById(fieldName);
-        if (field) {
-            const formGroup = field.closest('.form-group');
-            formGroup.classList.add('error');
-            
-            // Add error message
-            const errorElement = document.createElement('div');
-            errorElement.className = 'field-error';
-            errorElement.textContent = errors[fieldName];
-            formGroup.appendChild(errorElement);
-        }
-    });
-}
-
-function clearFormErrors() {
-    const errorGroups = document.querySelectorAll('.form-group.error');
-    errorGroups.forEach(group => {
-        group.classList.remove('error');
-        const errorElement = group.querySelector('.field-error');
-        if (errorElement) {
-            errorElement.remove();
-        }
-    });
-    
-    // Remove any global error/success messages
-    const existingMessages = document.querySelectorAll('.form-error, .form-success');
-    existingMessages.forEach(msg => msg.remove());
-}
-
-function showFormError(message) {
-    const form = document.getElementById('trialForm');
-    const errorDiv = document.createElement('div');
-    errorDiv.className = 'form-error';
-    errorDiv.textContent = message;
-    form.insertBefore(errorDiv, form.firstChild);
-}
-
-function showFormSuccess(message) {
-    const form = document.getElementById('trialForm');
-    const successDiv = document.createElement('div');
-    successDiv.className = 'form-success';
-    successDiv.innerHTML = message;
-    form.insertBefore(successDiv, form.firstChild);
-    
-    // Scroll to success message
-    successDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-}
-
-// Generate secure temporary password
-function generateSecurePassword() {
-    const length = 12;
-    const charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*';
-    let password = '';
-    
-    // Ensure at least one of each type
-    password += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[Math.floor(Math.random() * 26)]; // Uppercase
-    password += 'abcdefghijklmnopqrstuvwxyz'[Math.floor(Math.random() * 26)]; // Lowercase
-    password += '0123456789'[Math.floor(Math.random() * 10)]; // Number
-    password += '!@#$%^&*'[Math.floor(Math.random() * 8)]; // Special char
-    
-    // Fill remaining length
-    for (let i = password.length; i < length; i++) {
-        password += charset[Math.floor(Math.random() * charset.length)];
-    }
-    
-    // Shuffle the password
-    return password.split('').sort(() => Math.random() - 0.5).join('');
-}
-
-// Generate slug from company name (alphanumeric only)
-function generateSlug(companyName) {
-    if (!companyName || companyName.trim() === '') {
-        // Fallback if no company name provided
-        return 'company' + Date.now().toString().slice(-6);
-    }
-    
-    const slug = companyName
-        .toLowerCase()
-        .trim()
-        .replace(/[^\w\s]/g, '') // Remove all special characters
-        .replace(/\s+/g, '') // Remove all spaces
-        .replace(/[^a-z0-9]/g, ''); // Keep only alphanumeric characters
-    
-    // Ensure minimum length and valid format
-    if (slug.length < 2) {
-        return 'company' + Date.now().toString().slice(-6);
-    }
-    
-    return slug;
-}
-
-// Real API call for trial signup
-async function simulateTrialSignup(data) {
-    try {
-        // Format data for trial signup API
-        const trialSignupData = {
-            first_name: data.firstName.trim(),
-            last_name: data.lastName.trim(),
-            email: data.email.toLowerCase().trim(),
-            company: data.company.trim(),
-            website: data.website ? data.website.trim() : null,
-            phone: data.phone ? data.phone.trim() : null,
-            industry: data.industry || null,
-            team_size: data.teamSize || null
-        };
-
-        console.log('Sending trial signup request:', trialSignupData);
-
-        // Make API call to trial signup endpoint
-        const response = await fetch('https://uppalcrm-api.onrender.com/api/platform/trial-signup', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            },
-            body: JSON.stringify(trialSignupData)
-        });
-        
-        if (!response.ok) {
-            const errorData = await response.json().catch(() => ({ message: 'Unknown error' }));
-            throw new Error(errorData.error || errorData.message || `Trial signup failed: ${response.status} ${response.statusText}`);
-        }
-
-        const responseData = await response.json();
-
-        console.log('Trial signup successful!', responseData);
-
-        // Generate slug for display purposes
-        const organizationSlug = generateSlug(data.company);
-
-        return {
-            success: true,
-            message: 'Trial signup submitted successfully',
-            data: responseData,
-            temporaryPassword: 'Check your email',
-            organizationSlug: organizationSlug
-        };
-
-    } catch (error) {
-        console.error('Trial signup error:', error);
-
-        // Handle specific error types
-        if (error.message.includes('already signed up') || error.message.includes('already exists')) {
-            throw new Error('This email has already signed up for a trial.');
-        } else if (error.name === 'TypeError' && error.message.includes('fetch')) {
-            throw new Error('Unable to connect to the server. Please check your internet connection and try again.');
-        } else {
-            throw new Error(error.message || 'Failed to submit trial signup. Please try again or contact support.');
-        }
-    }
-}
-
-// Analytics tracking
-function trackConversion(eventName, data) {
-    // Integration with analytics services like Google Analytics, Mixpanel, etc.
-    console.log(`Tracking conversion: ${eventName}`, data);
-    
-    // Example Google Analytics 4 event
-    if (typeof gtag !== 'undefined') {
-        gtag('event', eventName, {
-            'company_name': data.company,
-            'industry': data.industry || 'unknown',
-            'team_size': data.teamSize || 'unknown'
-        });
-    }
-    
-    // Example Facebook Pixel event
-    if (typeof fbq !== 'undefined') {
-        fbq('track', 'CompleteRegistration', {
-            content_name: 'CRM Trial Signup',
-            value: 149, // Professional plan value
-            currency: 'USD'
-        });
-    }
-}
-
-// Pricing calculator
-function initPricingCalculator() {
-    const userCountInput = document.getElementById('userCount');
-    const totalCostElement = document.getElementById('totalCost');
-
-    if (userCountInput && totalCostElement) {
-        userCountInput.addEventListener('input', function() {
-            const userCount = parseInt(this.value) || 1;
-            const pricePerUser = 15;
-            const total = userCount * pricePerUser;
-            totalCostElement.textContent = `$${total}`;
-        });
-    }
-}
-
-// Pricing interactions
-function initPricingInteractions() {
-    const pricingCards = document.querySelectorAll('.pricing-card, .pricing-card-large');
-
-    pricingCards.forEach(card => {
-        const button = card.querySelector('.btn');
-
-        if (button) {
-            button.addEventListener('click', (e) => {
-                const planName = card.querySelector('h3')?.textContent || 'Per User Pricing';
-
-                if (button.textContent.includes('Contact Sales')) {
-                    // Handle enterprise contact
-                    handleEnterpriseContact(planName);
-                } else {
-                    // Handle trial signup for other plans
-                    handlePlanTrialSignup(planName);
-                }
-            });
-        }
-    });
-}
-
-function handleEnterpriseContact(planName) {
-    // Scroll to form or open contact modal
-    const trialSection = document.getElementById('trial');
-    if (trialSection) {
-        trialSection.scrollIntoView({ behavior: 'smooth' });
-        
-        // Pre-fill form with enterprise interest
-        const companyField = document.getElementById('company');
-        if (companyField && !companyField.value) {
-            companyField.focus();
-        }
-    }
-    
-    // Track enterprise interest
-    trackConversion('enterprise_interest', { plan: planName });
-}
-
-function handlePlanTrialSignup(planName) {
-    // Scroll to trial form
-    const trialSection = document.getElementById('trial');
-    if (trialSection) {
-        trialSection.scrollIntoView({ behavior: 'smooth' });
-    }
-    
-    // Track plan interest
-    trackConversion('plan_interest', { plan: planName });
-}
-
-// Animations and scroll effects
-function initAnimations() {
-    // Intersection Observer for fade-in animations
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate-in');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-    
-    // Observe elements for animation
-    const animateElements = document.querySelectorAll(
-        '.feature-card, .pricing-card, .trial-form-container'
-    );
-    
-    animateElements.forEach(el => {
-        observer.observe(el);
-    });
-    
-    // Counter animations for stats
-    animateCounters();
-}
-
-function animateCounters() {
-    const counters = document.querySelectorAll('.stat-number');
-    
-    const counterObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                animateCounter(entry.target);
-                counterObserver.unobserve(entry.target);
-            }
-        });
-    });
-    
-    counters.forEach(counter => {
-        counterObserver.observe(counter);
-    });
-}
-
-function animateCounter(element) {
-    const text = element.textContent;
-    const value = parseInt(text.replace(/[^\d]/g, ''));
-    const suffix = text.replace(/[\d,]/g, '');
-    
-    if (isNaN(value)) return;
-    
-    const duration = 2000;
-    const increment = value / (duration / 16);
-    let current = 0;
-    
-    const timer = setInterval(() => {
-        current += increment;
-        if (current >= value) {
-            current = value;
-            clearInterval(timer);
-        }
-        
-        const displayValue = Math.floor(current);
-        element.textContent = displayValue.toLocaleString() + suffix;
-    }, 16);
-}
-
-// Utility functions
-function debounce(func, wait) {
-    let timeout;
-    return function executedFunction(...args) {
-        const later = () => {
-            clearTimeout(timeout);
-            func(...args);
-        };
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-    };
-}
-
-function throttle(func, limit) {
-    let inThrottle;
-    return function() {
-        const args = arguments;
-        const context = this;
-        if (!inThrottle) {
-            func.apply(context, args);
-            inThrottle = true;
-            setTimeout(() => inThrottle = false, limit);
-        }
-    };
-}
-</script>
-
-<style>
-/* Form Success Styling */
-.form-success {
-    background: #f0f9ff;
-    border: 2px solid #0ea5e9;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-    color: #0c4a6e;
-}
-
-.form-success h4 {
-    margin: 0 0 15px 0;
-    color: #0ea5e9;
-    font-size: 1.2em;
-}
-
-.form-success .login-details {
-    background: white;
-    border-radius: 6px;
-    padding: 15px;
-    margin: 15px 0;
-    border-left: 4px solid #0ea5e9;
-}
-
-.form-success .login-details p {
-    margin: 8px 0;
-    font-size: 0.95em;
-}
-
-.form-success code {
-    background: #e0f2fe;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-family: 'Courier New', monospace;
-    font-weight: bold;
-    color: #0c4a6e;
-    user-select: all;
-}
-
-.form-success .next-steps {
-    margin-top: 15px;
-}
-
-.form-success ol {
-    margin: 10px 0;
-    padding-left: 20px;
-}
-
-.form-success ol li {
-    margin: 8px 0;
-    font-size: 0.95em;
-}
-
-.form-success a {
-    color: #0ea5e9;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.form-success a:hover {
-    text-decoration: underline;
-}
-
-.form-error {
-    background: #fef2f2;
-    border: 2px solid #ef4444;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 20px;
-    color: #dc2626;
-}
-</style>
-
+    <script src="script.js"></script>
 </body>
 </html>
