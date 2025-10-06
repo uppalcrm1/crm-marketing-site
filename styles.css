@@ -6,15 +6,18 @@
 }
 
 :root {
-    /* Colors */
-    --bg: #ffffff;
-    --bg-alt: #f8f9fa;
-    --text: #111827;
-    --text-light: #6b7280;
-    --border: #e5e7eb;
-    --primary: #0f172a;
-    --primary-hover: #1e293b;
-    --accent: #3b82f6;
+    /* Colors - Manus-inspired palette */
+    --bg: #fff;
+    --bg-alt: #f8f8f7;
+    --text: #34322d;
+    --text-secondary: #5e5e5b;
+    --text-tertiary: #858481;
+    --border: rgba(0, 0, 0, 0.06);
+    --primary: #1a1a19;
+    --primary-hover: #000000;
+    --accent: #0081f2;
+    --fill-tsp-white-main: rgba(55, 53, 47, 0.06);
+    --fill-tsp-gray-main: rgba(55, 53, 47, 0.04);
 
     /* Spacing */
     --space-xs: 0.5rem;
@@ -81,7 +84,7 @@ body {
 }
 
 .nav-links a {
-    color: var(--text-light);
+    color: var(--text-secondary);
     text-decoration: none;
     font-size: 0.9375rem;
     transition: color 0.2s;
@@ -124,7 +127,7 @@ body {
 
 .hero-subtitle {
     font-size: 1.25rem;
-    color: var(--text-light);
+    color: var(--text-secondary);
     margin-bottom: var(--space-xl);
     line-height: 1.6;
 }
@@ -141,7 +144,7 @@ body {
     gap: var(--space-sm);
     justify-content: center;
     align-items: center;
-    color: var(--text-light);
+    color: var(--text-secondary);
     font-size: 0.875rem;
 }
 
@@ -199,7 +202,7 @@ body {
 
 .section-subtitle {
     text-align: center;
-    color: var(--text-light);
+    color: var(--text-secondary);
     font-size: 1.125rem;
     margin-bottom: var(--space-2xl);
 }
@@ -235,7 +238,7 @@ body {
 }
 
 .feature-card p {
-    color: var(--text-light);
+    color: var(--text-secondary);
     line-height: 1.6;
 }
 
@@ -279,12 +282,12 @@ body {
 
 .period {
     font-size: 1.125rem;
-    color: var(--text-light);
+    color: var(--text-secondary);
     margin-left: 0.25rem;
 }
 
 .pricing-description {
-    color: var(--text-light);
+    color: var(--text-secondary);
 }
 
 .pricing-features {
@@ -353,7 +356,7 @@ body {
 .form-disclaimer {
     text-align: center;
     font-size: 0.875rem;
-    color: var(--text-light);
+    color: var(--text-secondary);
     margin-top: var(--space-md);
 }
 
@@ -386,7 +389,7 @@ body {
 }
 
 .footer-brand p {
-    color: var(--text-light);
+    color: var(--text-secondary);
     font-size: 0.9375rem;
 }
 
@@ -406,7 +409,7 @@ body {
 
 .footer-column a {
     display: block;
-    color: var(--text-light);
+    color: var(--text-secondary);
     text-decoration: none;
     font-size: 0.9375rem;
     margin-bottom: 0.5rem;
@@ -421,7 +424,7 @@ body {
     text-align: center;
     padding-top: var(--space-lg);
     border-top: 1px solid var(--border);
-    color: var(--text-light);
+    color: var(--text-secondary);
     font-size: 0.875rem;
 }
 
