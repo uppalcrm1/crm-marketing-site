@@ -3,34 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UppalCRM - Contact-Centric CRM for Software Licensing</title>
-    <meta name="description" content="The modern CRM built specifically for software licensing companies. Manage contacts, track licenses, and grow revenue with UppalCRM.">
+    <title>UppalCRM - Modern CRM for Software Licensing</title>
+    <meta name="description" content="The modern CRM built for software licensing companies. Manage contacts, track licenses, and grow revenue.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <div class="nav-brand">
-                    <i class="fas fa-users-cog"></i>
-                    <span>UppalCRM</span>
-                </div>
-                <div class="nav-links">
-                    <a href="#features">Features</a>
-                    <a href="#pricing">Pricing</a>
-                    <a href="#trial" class="btn-nav">Start Free Trial</a>
-                </div>
-                <button class="mobile-menu-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-brand">UppalCRM</div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#trial" class="nav-cta">Start Free Trial</a>
             </div>
         </div>
     </nav>
@@ -39,80 +27,20 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-badge">
-                    <i class="fas fa-sparkles"></i>
-                    <span>The CRM Built for Software Licensing</span>
-                </div>
-                <h1>Manage Contacts, Not Just Deals</h1>
-                <p class="hero-description">
-                    UppalCRM is the contact-centric CRM designed for software licensing companies.
-                    Track individual users, manage licenses at scale, and grow your recurring revenue—all in one place.
+                <h1 class="hero-title">The CRM Built for Software Licensing</h1>
+                <p class="hero-subtitle">
+                    Manage contacts, track licenses, and grow recurring revenue with a CRM designed specifically for software companies.
                 </p>
                 <div class="hero-cta">
-                    <a href="#trial" class="btn btn-primary">
-                        Start Free Trial
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                    <a href="#features" class="btn btn-secondary">
-                        See How It Works
-                    </a>
+                    <a href="#trial" class="btn btn-primary">Start Free Trial</a>
+                    <a href="#features" class="btn btn-secondary">Learn More</a>
                 </div>
-                <div class="hero-trust">
-                    <div class="trust-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>30-day free trial</span>
-                    </div>
-                    <div class="trust-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>No credit card required</span>
-                    </div>
-                    <div class="trust-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>$15/user/month</span>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="hero-image">
-                    <div class="dashboard-mockup">
-                        <div class="mockup-header">
-                            <div class="mockup-dots">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <div class="mockup-title">UppalCRM Dashboard</div>
-                        </div>
-                        <div class="mockup-content">
-                            <div class="mockup-sidebar">
-                                <div class="sidebar-item active">
-                                    <i class="fas fa-users"></i>
-                                    <span>Contacts</span>
-                                </div>
-                                <div class="sidebar-item">
-                                    <i class="fas fa-key"></i>
-                                    <span>Licenses</span>
-                                </div>
-                                <div class="sidebar-item">
-                                    <i class="fas fa-chart-line"></i>
-                                    <span>Analytics</span>
-                                </div>
-                            </div>
-                            <div class="mockup-main">
-                                <div class="contact-preview">
-                                    <div class="contact-avatar">JD</div>
-                                    <div class="contact-details">
-                                        <div class="contact-name">John Doe</div>
-                                        <div class="contact-company">TechCorp Inc.</div>
-                                        <div class="contact-licenses">
-                                            <span class="license-badge">Pro License</span>
-                                            <span class="license-badge">Team Add-on</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="hero-features">
+                    <span>30-day free trial</span>
+                    <span>•</span>
+                    <span>No credit card</span>
+                    <span>•</span>
+                    <span>$15/user/month</span>
                 </div>
             </div>
         </div>
@@ -121,52 +49,44 @@
     <!-- Features Section -->
     <section id="features" class="features">
         <div class="container">
-            <div class="section-header">
-                <h2>Everything You Need to Scale Your Software Business</h2>
-                <p>Powerful features designed specifically for software licensing companies</p>
-            </div>
+            <h2 class="section-title">Everything you need to scale</h2>
+            <p class="section-subtitle">Built for modern software licensing businesses</p>
+
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-user-circle"></i>
-                    </div>
-                    <h3>Contact-Centric View</h3>
-                    <p>Track every customer relationship from first contact to renewal. See complete licensing history, usage patterns, and communication in one place.</p>
+                    <div class="feature-icon">👥</div>
+                    <h3>Contact Management</h3>
+                    <p>Track every customer relationship from first contact to renewal with complete licensing history.</p>
                 </div>
+
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-key"></i>
-                    </div>
-                    <h3>License Management</h3>
-                    <p>Manage software licenses, track usage, handle renewals, and monitor compliance. Support for both subscription and perpetual licensing models.</p>
+                    <div class="feature-icon">🔑</div>
+                    <h3>License Tracking</h3>
+                    <p>Manage software licenses, handle renewals, and monitor compliance across all your products.</p>
                 </div>
+
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
+                    <div class="feature-icon">📊</div>
                     <h3>Revenue Analytics</h3>
-                    <p>Deep insights into recurring revenue, churn rates, customer lifetime value, and license utilization to drive data-driven decisions.</p>
+                    <p>Deep insights into recurring revenue, churn rates, and customer lifetime value.</p>
                 </div>
+
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-bell"></i>
-                    </div>
-                    <h3>Smart Notifications</h3>
-                    <p>Automated renewal reminders, usage alerts, and customer success triggers to never miss an important moment.</p>
+                    <div class="feature-icon">🔔</div>
+                    <h3>Smart Alerts</h3>
+                    <p>Automated renewal reminders and usage alerts to never miss important moments.</p>
                 </div>
+
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-plug"></i>
-                    </div>
-                    <h3>API & Integrations</h3>
-                    <p>Connect with payment processors, licensing platforms, and support tools. Powerful APIs and webhooks for seamless integration.</p>
+                    <div class="feature-icon">🔌</div>
+                    <h3>API Access</h3>
+                    <p>Powerful APIs and webhooks for seamless integration with your existing tools.</p>
                 </div>
+
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
+                    <div class="feature-icon">🔒</div>
                     <h3>Enterprise Security</h3>
-                    <p>Bank-level encryption, SSO support, audit logs, and compliance tools. Your customer data is always protected.</p>
+                    <p>Bank-level encryption, SSO support, and compliance tools for your data.</p>
                 </div>
             </div>
         </div>
@@ -175,167 +95,70 @@
     <!-- Pricing Section -->
     <section id="pricing" class="pricing">
         <div class="container">
-            <div class="section-header">
-                <h2>Simple, Transparent Pricing</h2>
-                <p>Pay only for what you use. Scale as you grow.</p>
-            </div>
-            <div class="pricing-content">
-                <div class="pricing-card">
-                    <div class="pricing-badge">Best Value</div>
-                    <div class="pricing-header">
-                        <h3>Per User Pricing</h3>
-                        <div class="price">
-                            <span class="currency">$</span>
-                            <span class="amount">15</span>
-                            <span class="period">/user/month</span>
-                        </div>
-                        <p class="pricing-subtitle">Everything included. No hidden fees.</p>
-                    </div>
+            <h2 class="section-title">Simple, transparent pricing</h2>
+            <p class="section-subtitle">Pay only for what you use. Scale as you grow.</p>
 
-                    <div class="pricing-calculator">
-                        <label for="userCount">How many users do you need?</label>
-                        <div class="calculator-input-group">
-                            <input type="number" id="userCount" min="1" value="5" />
-                            <span class="input-label">users</span>
-                        </div>
-                        <div class="calculator-result">
-                            <span class="result-label">Total monthly cost</span>
-                            <span class="result-amount" id="totalCost">$75</span>
-                        </div>
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <div class="pricing-amount">
+                        <span class="currency">$</span>
+                        <span class="price">15</span>
+                        <span class="period">/user/month</span>
                     </div>
-
-                    <div class="pricing-features">
-                        <h4>Everything included:</h4>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Unlimited contacts & leads</li>
-                            <li><i class="fas fa-check"></i> Advanced license management</li>
-                            <li><i class="fas fa-check"></i> Revenue analytics & forecasting</li>
-                            <li><i class="fas fa-check"></i> Team collaboration tools</li>
-                            <li><i class="fas fa-check"></i> API access & webhooks</li>
-                            <li><i class="fas fa-check"></i> Priority support</li>
-                            <li><i class="fas fa-check"></i> Advanced security & SSO</li>
-                            <li><i class="fas fa-check"></i> 99.9% uptime SLA</li>
-                        </ul>
-                    </div>
-
-                    <a href="#trial" class="btn btn-primary btn-large">Start 30-Day Free Trial</a>
+                    <p class="pricing-description">Everything included. No hidden fees.</p>
                 </div>
 
-                <div class="pricing-faq">
-                    <h3>Frequently Asked Questions</h3>
-                    <div class="faq-list">
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <i class="fas fa-question-circle"></i>
-                                <span>Can I add or remove users anytime?</span>
-                            </div>
-                            <p>Yes! Add or remove users whenever you need. You'll only be charged for active users each month.</p>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <i class="fas fa-question-circle"></i>
-                                <span>What payment methods do you accept?</span>
-                            </div>
-                            <p>We accept all major credit cards, PayPal, and can set up invoicing for annual plans.</p>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <i class="fas fa-question-circle"></i>
-                                <span>Is there a discount for annual billing?</span>
-                            </div>
-                            <p>Yes! Save 20% when you pay annually. Contact us for custom enterprise pricing.</p>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <i class="fas fa-question-circle"></i>
-                                <span>What happens after the trial?</span>
-                            </div>
-                            <p>After your 30-day trial, simply add a payment method to continue. No automatic charges during trial.</p>
-                        </div>
-                    </div>
+                <div class="pricing-features">
+                    <div class="pricing-feature">✓ Unlimited contacts & leads</div>
+                    <div class="pricing-feature">✓ Advanced license management</div>
+                    <div class="pricing-feature">✓ Revenue analytics & forecasting</div>
+                    <div class="pricing-feature">✓ Team collaboration tools</div>
+                    <div class="pricing-feature">✓ API access & webhooks</div>
+                    <div class="pricing-feature">✓ Priority support</div>
+                    <div class="pricing-feature">✓ Advanced security & SSO</div>
+                    <div class="pricing-feature">✓ 99.9% uptime SLA</div>
                 </div>
+
+                <a href="#trial" class="btn btn-primary btn-large">Start 30-Day Free Trial</a>
             </div>
         </div>
     </section>
 
-    <!-- Trial Signup Section -->
-    <section id="trial" class="trial-section">
+    <!-- Trial Section -->
+    <section id="trial" class="trial">
         <div class="container">
-            <div class="trial-container">
-                <div class="trial-header">
-                    <h2>Start Your 30-Day Free Trial</h2>
-                    <p>Join hundreds of software companies using UppalCRM to manage their customer relationships and grow revenue.</p>
-                    <div class="trial-benefits">
-                        <div class="benefit">
-                            <i class="fas fa-check-circle"></i>
-                            <span>30-day free trial</span>
-                        </div>
-                        <div class="benefit">
-                            <i class="fas fa-check-circle"></i>
-                            <span>No credit card required</span>
-                        </div>
-                        <div class="benefit">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Full access to all features</span>
-                        </div>
-                        <div class="benefit">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Free setup assistance</span>
-                        </div>
+            <div class="trial-content">
+                <h2 class="section-title">Start your free trial</h2>
+                <p class="section-subtitle">Join software companies using UppalCRM to grow their business</p>
+
+                <form id="trialForm" class="trial-form">
+                    <div class="form-row">
+                        <input type="text" name="firstName" placeholder="First name" required>
+                        <input type="text" name="lastName" placeholder="Last name" required>
                     </div>
-                </div>
 
-                <div class="trial-form-wrapper">
-                    <form id="trialForm" class="trial-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="firstName">First Name *</label>
-                                <input type="text" id="firstName" name="firstName" required placeholder="John">
-                            </div>
-                            <div class="form-group">
-                                <label for="lastName">Last Name *</label>
-                                <input type="text" id="lastName" name="lastName" required placeholder="Doe">
-                            </div>
-                        </div>
+                    <div class="form-row">
+                        <input type="email" name="email" placeholder="Work email" required>
+                        <input type="text" name="company" placeholder="Company name" required>
+                    </div>
 
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="email">Business Email *</label>
-                                <input type="email" id="email" name="email" required placeholder="john@company.com">
-                            </div>
-                            <div class="form-group">
-                                <label for="company">Company Name *</label>
-                                <input type="text" id="company" name="company" required placeholder="Acme Inc">
-                            </div>
-                        </div>
+                    <div class="form-row">
+                        <input type="tel" name="phone" placeholder="Phone (optional)">
+                        <select name="teamSize">
+                            <option value="">Team size</option>
+                            <option value="1-5">1-5 people</option>
+                            <option value="6-20">6-20 people</option>
+                            <option value="21-50">21-50 people</option>
+                            <option value="51+">51+ people</option>
+                        </select>
+                    </div>
 
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="phone">Phone Number (Optional)</label>
-                                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567">
-                            </div>
-                            <div class="form-group">
-                                <label for="teamSize">Team Size</label>
-                                <select id="teamSize" name="teamSize">
-                                    <option value="">Select team size</option>
-                                    <option value="1-5">1-5 people</option>
-                                    <option value="6-20">6-20 people</option>
-                                    <option value="21-50">21-50 people</option>
-                                    <option value="51+">51+ people</option>
-                                </select>
-                            </div>
-                        </div>
+                    <button type="submit" class="btn btn-primary btn-large btn-full">Start Free Trial</button>
 
-                        <button type="submit" class="btn btn-primary btn-large btn-full">
-                            Start Free Trial
-                            <i class="fas fa-arrow-right"></i>
-                        </button>
-
-                        <p class="form-disclaimer">
-                            By signing up, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
-                        </p>
-                    </form>
-                </div>
+                    <p class="form-disclaimer">
+                        By signing up, you agree to our <a href="#">Terms</a> and <a href="#">Privacy Policy</a>
+                    </p>
+                </form>
             </div>
         </div>
     </section>
@@ -345,53 +168,36 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <div class="brand">
-                        <i class="fas fa-users-cog"></i>
-                        <span>UppalCRM</span>
-                    </div>
-                    <p>The contact-centric CRM built for software licensing companies.</p>
-                    <div class="footer-social">
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    </div>
+                    <div class="brand-name">UppalCRM</div>
+                    <p>The CRM built for software licensing companies.</p>
                 </div>
+
                 <div class="footer-links">
                     <div class="footer-column">
                         <h4>Product</h4>
-                        <ul>
-                            <li><a href="#features">Features</a></li>
-                            <li><a href="#pricing">Pricing</a></li>
-                            <li><a href="#">API Docs</a></li>
-                            <li><a href="#">Integrations</a></li>
-                        </ul>
+                        <a href="#features">Features</a>
+                        <a href="#pricing">Pricing</a>
+                        <a href="#">API Docs</a>
                     </div>
+
                     <div class="footer-column">
                         <h4>Company</h4>
-                        <ul>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
+                        <a href="#">About</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Contact</a>
                     </div>
+
                     <div class="footer-column">
                         <h4>Legal</h4>
-                        <ul>
-                            <li><a href="#">Privacy</a></li>
-                            <li><a href="#">Terms</a></li>
-                            <li><a href="#">Security</a></li>
-                            <li><a href="#">GDPR</a></li>
-                        </ul>
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms</a>
+                        <a href="#">Security</a>
                     </div>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2025 UppalCRM. All rights reserved.</p>
-                <div class="footer-links-bottom">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                </div>
+                <p>© 2025 UppalCRM. All rights reserved.</p>
             </div>
         </div>
     </footer>
