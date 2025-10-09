@@ -281,7 +281,7 @@ a:hover {
     align-items: center;
 }
 
-.hero-content {
+.hero-text {
     max-width: 600px;
 }
 
@@ -1065,16 +1065,10 @@ a:hover {
     background-clip: text;
 }
 
-/* Hero Grid Fix */
+/* Hero Grid Fix - Removed duplicate that was breaking layout */
 .hero .container {
     max-width: 1200px;
-}
-
-.hero-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-16);
-    align-items: center;
+    /* Grid already defined earlier at line ~278 */
 }
 
 .hero-visual {
