@@ -266,39 +266,23 @@
                             <span class="amount">15</span>
                             <span class="period">/user/month</span>
                         </div>
-                        <p class="pricing-tagline">Unlimited consumer tracking • No per-subscriber fees</p>
-                    </div>
-
-                    <div class="pricing-calculator">
-                        <div class="calculator-header">
-                            <i class="fas fa-calculator"></i>
-                            <span>Calculate your price</span>
-                        </div>
-                        <div class="calculator-input">
-                            <label for="userCount">How many team members need access?</label>
-                            <input type="number" id="userCount" min="1" value="5" />
-                            <p class="calculator-note">Your team size, not your consumer count</p>
-                        </div>
-                        <div class="calculator-result">
-                            <span class="result-label">Total monthly cost:</span>
-                            <span class="result-amount" id="totalCost">$75</span>
-                        </div>
+                        <p class="pricing-tagline">Pay only for your team members who need access. Unlimited consumer tracking included.</p>
                     </div>
 
                     <div class="pricing-features-large">
                         <h4>Everything Included:</h4>
                         <div class="features-two-column">
                             <ul>
-                                <li><i class="fas fa-check-circle"></i> Unlimited consumer/subscriber tracking</li>
-                                <li><i class="fas fa-check-circle"></i> Multi-user household management</li>
-                                <li><i class="fas fa-check-circle"></i> Device registration & monitoring</li>
+                                <li><i class="fas fa-check-circle"></i> Consumer/subscriber tracking</li>
+                                <li><i class="fas fa-check-circle"></i> Multi-account household management</li>
+                                <li><i class="fas fa-check-circle"></i> Device registration tracking</li>
                                 <li><i class="fas fa-check-circle"></i> Subscription lifecycle tracking</li>
                                 <li><i class="fas fa-check-circle"></i> Usage analytics & reporting</li>
                                 <li><i class="fas fa-check-circle"></i> Automated email campaigns</li>
                             </ul>
                             <ul>
-                                <li><i class="fas fa-check-circle"></i> Team collaboration tools</li>
-                                <li><i class="fas fa-check-circle"></i> API access & integrations</li>
+                                <li><i class="fas fa-check-circle"></i> Status & activity tracking</li>
+                                <li><i class="fas fa-check-circle"></i> API integrations with external systems</li>
                                 <li><i class="fas fa-check-circle"></i> Custom workflows & automation</li>
                                 <li><i class="fas fa-check-circle"></i> Priority support</li>
                                 <li><i class="fas fa-check-circle"></i> Data export & backups</li>
@@ -483,7 +467,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initNavigation();
     initSmoothScrolling();
     initTrialForm();
-    initPricingCalculator();
     initMobileMenu();
 });
 
@@ -710,20 +693,6 @@ async function submitTrialSignup(data) {
     }
 
     return response.json();
-}
-
-function initPricingCalculator() {
-    const userCountInput = document.getElementById('userCount');
-    const totalCostElement = document.getElementById('totalCost');
-
-    if (userCountInput && totalCostElement) {
-        userCountInput.addEventListener('input', function() {
-            const userCount = parseInt(this.value) || 1;
-            const pricePerUser = 15;
-            const total = userCount * pricePerUser;
-            totalCostElement.textContent = `$${total}`;
-        });
-    }
 }
 </script>
 
